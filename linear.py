@@ -37,6 +37,9 @@ def dot3D(v1, v2):
 def scalar3D(s, v):
 	return vector3(s*v.x, s*v.y, s*v.z)
 
+def cross(v1, v2):
+	return vector3(v1.y*v2.z - v1.z*v2.y, v1.z*v2.x - v1.x*v2.z, v1.x*v2.y - v1.y*v2.x)
+
 #---- RGB Values ----
 
 class rgb:
